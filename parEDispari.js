@@ -9,6 +9,11 @@ var pariDispari = prompt('scegli tra pari e dispari');
 pariDispari = pariDispari.toLowerCase();
 console.log('hai scelto ' + pariDispari);
 // creo una funzione che mi riconosce pari o dispari
+/**
+ * ## Controlla se è pari
+ * @param {number} number
+ * @returns {string} 'pari' o 'dispari'
+ */
 function isPari (number) {
     if (number % 2 == 0) {
         return 'pari';
@@ -20,6 +25,11 @@ function isPari (number) {
 var userNumber = Number(prompt('scegli un numero da 1 a 5'));
 console.log('hai scelto il numero ' + userNumber);
 //funzione per creare numeri random per il pc
+/**
+ * ## Ottiene numero random
+ * @param {number} number
+ * @returns {number} 
+ */
 function getRandomNumber (number) {
      var pcNumber = Math.ceil(Math.random() * number);
      console.log('il numero casuale del pc è ' + pcNumber);
